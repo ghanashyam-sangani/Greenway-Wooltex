@@ -899,7 +899,7 @@ body:after {
 
 .sidebar-box {
   margin-bottom: 30px;
-  padding: 25px;
+  /* padding: 25px; */
   font-size: 15px;
   width: 100%;
   float: left;
@@ -1018,3 +1018,7 @@ body:after {
     color: #888888; }
     .footer a:hover {
       color: #000; }
+.dropdown-item{
+  
+}
+

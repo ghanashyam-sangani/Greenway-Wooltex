@@ -7,8 +7,14 @@
 jQuery(document).ready(function($) {
 
 	"use strict";
-
+	let url = window.location.pathname;
+	url = url.substring(url.lastIndexOf("/") + 1);
+	$(".sub-nav-link").removeClass("active");        
+				$('.sub-nav-link[href="' + url + '"]').addClass("active");
 	
+				if ($('.sub-nav-link').hasClass('active')) {
+					$('#sub-nav').addClass("active");
+				}
 	$(".loader").delay(200).fadeOut("slow");
   $("#overlayer").delay(200).fadeOut("slow");	
   
