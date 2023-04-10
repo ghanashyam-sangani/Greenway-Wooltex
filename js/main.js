@@ -208,6 +208,7 @@ jQuery(document).ready(function($) {
 
 	var siteSticky = function() {
 		$(".js-sticky-header").sticky({topSpacing:0});
+		$("#sticky-wrapper").addClass('is-sticky');
 	};
 	siteSticky();
 
@@ -220,7 +221,7 @@ jQuery(document).ready(function($) {
       var hash = this.hash;
 
       $('html, body').animate({
-        'scrollTop': $(hash).offset().top
+        'scrollTop': $(hash).offset().top ?? 0
       }, 600, 'easeInOutExpo', function(){
         window.location.hash = hash;
       });

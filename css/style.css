@@ -1008,17 +1008,23 @@ body:after {
     border-color: #000; }
 
 .footer {
-  font-size: .9rem; }
-  .footer .footer-title {
+  font-size: .9rem; 
+}
+.footer .footer-title {
     font-size: 1.1rem;
-    margin-bottom: 30px; }
-  .footer ul li {
-    margin-bottom: 10px; }
-  .footer a {
-    color: #888888; }
-    .footer a:hover {
-      color: #000; }
-.dropdown-item{
-  
+    margin-bottom: 30px;
+}
+.footer ul li {
+    margin-bottom: 10px; 
+}
+.footer a {
+    color: #888888; 
+}
+.footer a:hover {
+      color: #000; 
+}
+
+.icon-facebook,.icon-instagram,.icon-whatsapp{
+  font-size: 20px;
 }
 

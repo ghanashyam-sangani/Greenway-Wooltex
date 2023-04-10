@@ -63,7 +63,7 @@
                 'top': '',
                 'z-index': ''
               });
-            s.stickyElement.parent().removeClass(s.className);
+            // s.stickyElement.parent().removeClass(s.className);
             s.stickyElement.trigger('sticky-end', [s]);
             s.currentTop = null;
           }
