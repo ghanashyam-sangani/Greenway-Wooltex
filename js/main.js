@@ -66,11 +66,9 @@ jQuery(document).ready(function($) {
 			}
 		})
 
-		$('body').on('click', '.js-menu-toggle, .nav-link', function(e) {
+		$('body').on('click', '.js-menu-toggle', function(e) {
 			var $this = $(this);
-			if ($this.attr('class') == 'js-menu-toggle') {				
-				e.preventDefault();
-			}
+			e.preventDefault();
 
 			if ( $('body').hasClass('offcanvas-menu') ) {
 				$('body').removeClass('offcanvas-menu');
@@ -78,6 +76,15 @@ jQuery(document).ready(function($) {
 			} else {
 				$('body').addClass('offcanvas-menu');
 				$this.addClass('active');
+			}
+		})
+		
+		$('.nav-link').on('click', function(e) {
+			var $this = $(this);
+
+			if ( $('body').hasClass('offcanvas-menu') ) {
+				$('body').removeClass('offcanvas-menu');
+				$this.removeClass('active');
 			}
 		}) 
 
