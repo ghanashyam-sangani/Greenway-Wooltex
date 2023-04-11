@@ -66,9 +66,11 @@ jQuery(document).ready(function($) {
 			}
 		})
 
-		$('body').on('click', '.js-menu-toggle', function(e) {
+		$('body').on('click', '.js-menu-toggle, .nav-link', function(e) {
 			var $this = $(this);
-			e.preventDefault();
+			if ($this.attr('class') == 'js-menu-toggle') {				
+				e.preventDefault();
+			}
 
 			if ( $('body').hasClass('offcanvas-menu') ) {
 				$('body').removeClass('offcanvas-menu');
@@ -221,7 +223,9 @@ jQuery(document).ready(function($) {
 
     });
   };
-  OnePageNavigation();
+  if ((window.location.pathname).includes('index.html')) {	
+	  OnePageNavigation();
+  }
 
   var siteScroll = function() {
 
