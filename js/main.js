@@ -7,6 +7,15 @@
 jQuery(document).ready(function($) {
 
 	"use strict";
+	
+	if (!(window.location.pathname).includes('.html') && window.location.href.indexOf('?no_redirect') == -1) {
+        if (window.location.hostname.endsWith('.github.io')) {
+            let repo = window.location.pathname.split('/')[1];
+            window.location.replace('/' + repo + '/index.html');
+        } else {
+            window.location.replace('/index.html');
+        }
+    }    
 
 	$(".loader").delay(200).fadeOut("slow");
     $("#overlayer").delay(200).fadeOut("slow");	
