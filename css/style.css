@@ -1028,5 +1028,10 @@ body:after {
   font-size: 20px;
 }
 
+.site-menu{
+	font-size: 18px;
+}
 
-
+.logo-image{
+	min-width: 160px;
+}
