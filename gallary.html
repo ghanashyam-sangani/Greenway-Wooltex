@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-	<title>Greenway Wooltex</title>
+	<title>Contact Us - Greenway Wooltex</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<link href="images/favicon.jpg" rel="icon">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -16,19 +17,65 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
 	<link rel="stylesheet" href="css/aos.css">
-
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/templatemo-pod-talk.css">
+
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+	<!-- MDB -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.min.css" rel="stylesheet" />
+
+	<style>
+		body {
+			background-color: #f5f8fa;
+		}
+
+		.contact-section {
+			padding: 60px 15px;
+			max-width: 800px;
+			margin: auto;
+			background: #ffffff;
+			border-radius: 15px;
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+			position: relative;
+			z-index: 9999;
+		}
+
+		.contact-section h2 {
+			text-align: center;
+			margin-bottom: 30px;
+			font-weight: bold;
+			color: #333;
+		}
+
+		.form-control {
+			border-radius: 10px;
+		}
+
+		.btn-submit {
+			background-color: #2d6a4f;
+			color: #fff;
+			border: none;
+			border-radius: 10px;
+			padding: 12px 25px;
+			font-size: 16px;
+			transition: all 0.3s ease;
+		}
+
+		.btn-submit:hover {
+			background-color: #1b4332;
+		}
+	</style>
 
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
 
 	<div id="overlayer"></div>
 	<div class="loader">
@@ -36,7 +83,6 @@
 			<span class="sr-only">Loading...</span>
 		</div>
 	</div>
-
 
 	<div class="site-wrap">
 
@@ -49,7 +95,7 @@
 			<div class="site-mobile-menu-body"></div>
 		</div>
 
-		<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+		<header class="site-navbar js-sticky-header sticky-wrapper is-sticky site-navbar-target" role="banner">
 
 			<div class="container">
 				<div class="row align-items-center justify-content-center">
@@ -57,68 +103,140 @@
 					<div class="col-4">
 						<a class="m-0 site-logo" href="index.html">
 							<img src="images/main-logo.jpeg" class="logo-image img-fluid" alt="templatemo pod talk"
-								width="100">
-							<!-- <div>Greenway</br> Wooltex</div> -->
+								width="125">
 						</a>
-						<!-- <h1 class="m-0 site-logo"><a href="index.html">GreenWay Wooltex</a></h1> -->
 					</div>
 
 					<div class="col-8">
+
 						<nav class="site-navigation position-relative text-right" role="navigation">
 							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="index.html#home-section" class="nav-link active">Home</a></li>
+								<li><a href="index.html#home-section" class="nav-link">Home</a></li>
 								<li><a href="index.html#products-section" class="nav-link">Products</a></li>
 								<li><a href="index.html#about-section" class="nav-link">About</a></li>
 								<li><a href="contact-us.html" class="nav-link"> Contact Us
 									</a></li>
-								<li><a href="gallary.html" class="nav-link"> Gallary
+								<li><a href="gallary.html" class="nav-link active"> Gallary
 									</a></li>
 							</ul>
 						</nav>
-
 
 						<a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle float-right"><span
 								class="icon-menu h3"></span></a>
 
 					</div>
 
-
 				</div>
+
 			</div>
 
 		</header>
 
-		<div class="site-section first-section">
+
+		<div class="site-section" id="about-section">
 			<div class="container">
-				<h1 class="text-primary text-left my-5">Louvers Details</h1>
-				<div class="row">
-					<div class="col-md-8 blog-content">
-						<p class="lead"> Efficient Airflow, Modern Design
-							Our louvers are crafted to provide controlled ventilation while adding a sleek,
-							architectural touch to any structure. Whether installed in doors, windows, or walls, they
-							help manage airflow without compromising on style or function.</p>
-
-						<p class="lead"> Protection with Performance
-							Designed to block rain, dust, insects, and harsh sunlight, our louvers offer reliable
-							protection in both residential and commercial settings. With fixed or adjustable options
-							available, they allow you to regulate air circulation based on your needs.</p>
-
-						<p class="lead"> Built to Last in Every Environment
-							Made from high-grade materials like aluminum or PVC, our louvers are resistant to corrosion,
-							moisture, and UV damage. Their low-maintenance construction ensures long-lasting
-							performance, making them a smart choice for ventilation and design enhancement.
-						</p>
-						<p class="lead"> Enhance airflow and aesthetics with our durable, weather-resistant louvers
-							designed for efficient ventilation and modern design.
-						</p>
+				<!-- Carousel wrapper -->
+				<div id="carouselVideoExample" data-mdb-carousel-init class="carousel slide carousel-fade"
+					data-mdb-ride="carousel">
+					<!-- Indicators -->
+					<div class="carousel-indicators">
+						<button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample"
+							data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample"
+							data-mdb-slide-to="1" aria-label="Slide 2"></button>
+						<button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample"
+							data-mdb-slide-to="2" aria-label="Slide 3"></button>
 					</div>
-					<div class="col-md-4 sidebar">
-						<div class="sidebar-box">
-							<img src="images/greenwayimages/Greenway11.JPG" alt="Image placeholder"
-								class="img-fluid mb-4">
+
+					<!-- Inner -->
+					<div class="carousel-inner">
+
+						<!-- Single item -->
+						<div class="carousel-item active">
+						  <div class="ratio ratio-16x9">
+						    <iframe 
+						      src="https://www.youtube.com/embed/-2zlAD1yFsI?autoplay=1&mute=1&playsinline=1"
+						      title="YouTube Video"
+						      allow="autoplay; encrypted-media"
+						      allowfullscreen
+						      frameborder="0">
+						    </iframe>
+						  </div>
 						</div>
+
+
+						<!-- Single item -->
+						<div class="carousel-item">
+						  <div class="ratio ratio-16x9">
+						    <iframe 
+						      src="https://www.youtube.com/embed/UdLsk684lzo?autoplay=1&mute=1&playsinline=1"
+						      title="YouTube Short"
+						      allow="autoplay; encrypted-media"
+						      allowfullscreen
+						      frameborder="0">
+						    </iframe>
+						  </div>
+						</div>
+						
+
+						<!-- Single item -->
+						<div class="carousel-item ">
+							<video class="img-fluid" autoplay loop muted>
+								<source src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4" type="video/mp4" />
+							</video>
+						</div>
+
+					</div>
+					<!-- Inner -->
+
+					<!-- Controls -->
+					<button data-mdb-button-init class="carousel-control-prev" type="button"
+						data-mdb-target="#carouselVideoExample" data-mdb-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button data-mdb-button-init class="carousel-control-next" type="button"
+						data-mdb-target="#carouselVideoExample" data-mdb-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<!-- Carousel wrapper -->
+
+
+				<!-- Gallery -->
+				<div class="row mt-5">
+					<div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+						<img src="images/gallery/new4.jpg" class="w-100 shadow-1-strong rounded mb-4"
+							alt="Forest Trail" />
+						<img src="images/gallery/9.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Sunny Beach" />
+						<img src="images/gallery/10.jpg" class="w-100 shadow-1-strong rounded mb-4"
+							alt="Green Valley" />
+
+
+					</div>
+
+					<div class="col-lg-4 mb-4 mb-lg-0">
+						<img src="images/gallery/4.jpg" class="w-100 shadow-1-strong rounded mb-4"
+							alt="Mountains in the Clouds" />
+						<img src="images/gallery/5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+							alt="Boat on Calm Water" />
+						<img src="images/gallery/6.jpg" class="w-100 shadow-1-strong rounded mb-4"
+							alt="Wintry Mountain Landscape" />
+						<img src="images/gallery/3.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Rocky Peak" />
+
+					</div>
+
+					<div class="col-lg-4 mb-4 mb-lg-0">
+						<img src="images/gallery/7.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+						<img src="images/gallery/8.jpg" class="w-100 shadow-1-strong rounded mb-4"
+							alt="Yosemite National Park" />
+						<img src="images/gallery/new5.jpg" class="w-100 shadow-1-strong rounded mb-4"
+							alt="Boat on Calm Water" />
 					</div>
 				</div>
+				<!-- Gallery -->
+
 			</div>
 		</div>
 
@@ -189,8 +307,8 @@
 			</div>
 
 		</footer>
-
 	</div>
+	</div> <!-- .site-wrap -->
 
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
@@ -202,9 +320,10 @@
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
-
-
 	<script src="js/main.js"></script>
+	<!-- MDB -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/9.1.0/mdb.umd.min.js"></script>
 </body>
 
 </html>
